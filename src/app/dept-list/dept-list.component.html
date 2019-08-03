@@ -1,0 +1,11 @@
+
+
+<br><br><table border="2" width="400" align="center">
+    <tr><th (click)="sort('dptId')">deptID</th><th (click)="sort('dptName')">deptName</th><th>Remove</th></tr>
+
+    <tr *ngFor="let e of departments | orderBy:column:order">
+        <td>{{e.dptId}}</td>
+        <td>{{e.dptName}}</td>
+         <td><button (click)="delete(e.dptId)" type="button">Delete</button></td></tr> 
+  
+</table>

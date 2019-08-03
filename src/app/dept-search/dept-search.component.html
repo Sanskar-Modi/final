@@ -1,0 +1,24 @@
+
+    <form #details="ngForm" (ngSubmit)="search(details.value)">
+    <table borde="3">
+       <tr>
+           <th>Enter dptId</th>
+           <td>
+               <input type="text" placeholder="id" name="id" ngModel/>
+           </td>
+       </tr>
+    <tr>
+        <td>
+            <input type="submit" value="submit">
+        </td>
+    </tr>
+    </table></form>
+    <table>
+        <tbody align="center">
+         
+            <tr *ngFor="let d of departments">
+                <td>{{d.dptId}}</td>
+                <td>{{d.dptName}}</td>
+            </tr>
+        </tbody>
+    </table>

@@ -1,0 +1,26 @@
+
+<html>
+    <form #details="ngForm" (ngSubmit)="update(details.value)">
+    <table borde="3">
+       <tr>
+           <th>Enter dptId</th>
+           <td>
+               <input type="text" placeholder="id" name="dptId" ngModel>
+           </td>
+       </tr>
+       <tr>
+        <th>Enter name</th>
+        <td>
+            <input type="text" placeholder="name" name="dptName" ngModel> 
+        </td>
+   
+    <tr>
+        
+        <td>
+            <input type="submit" value="submit">
+        </td>
+    </tr>
+    </table>
+</form>
+</html>
+
